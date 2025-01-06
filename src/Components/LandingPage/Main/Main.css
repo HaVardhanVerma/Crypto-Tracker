@@ -1,0 +1,174 @@
+.flex-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0.5rem 3rem;
+    /* border: 2px solid white; */
+}
+
+.track-info-heading,
+.real-time-heading {
+    font-size: 7rem;
+    margin: 0;
+}
+
+.left-component {
+    margin-top: 2.5rem;
+}
+
+.real-time-heading {
+    color: var(--blue);
+}
+
+.track-info-heading {
+    color: var(--white);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--white);
+}
+
+.track-info-heading:hover{
+    color: var(--black);
+    transition: all 0.3s;
+    -webkit-text-stroke-color: var(--white);
+}
+
+.info-text {
+    color: var(--grey);
+    font-size: 1rem;
+}
+
+.btn-flex {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.phone-container {
+    position: relative;
+    width: 50%;
+    padding: 1rem;
+    /* border: 2px solid white; */
+}
+
+.iphone {
+    position: absolute;
+    /* min-width: 350px; */
+    width: 300px;
+    right: 0;
+}
+
+.gradient {
+    position: absolute;
+    /* min-width: 300px; */
+    width: 250px;
+    top: 2.5rem;
+    right: 0;
+}
+
+@media only screen and (max-width: 1350px) {
+    .track-info-heading,
+    .real-time-heading {
+      font-size: 5rem;
+    }
+
+    .left-component {
+        margin-top: 3.5rem;
+    }
+
+    .info-text {
+        font-size: 0.8rem;
+    }
+
+    .iphone {
+        position: absolute;
+        /* min-width: 350px; */
+        width: 250px;
+        right: 0;
+    }
+    
+    .gradient {
+        position: absolute;
+        /* min-width: 300px; */
+        width: 200px;
+        top: 2rem;
+        right: 0;
+    }
+    
+}
+  
+@media only screen and (max-width: 1050px) {
+    .track-info-heading,
+    .real-time-heading {
+      font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width: 809px) {
+
+    .left-component {
+        margin-top: 5rem;
+    }
+
+    .iphone {
+        left: 1;
+        top: 0;
+        width: 200px;
+    }
+
+    .gradient {
+        top: auto;
+        width: 160px;
+    }
+
+    .track-info-heading,
+    .real-time-heading {
+        font-size: 4rem;
+    }
+
+    .phone-container {
+        margin-top: 3.5rem;
+        padding: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 765px) {
+
+    .flex-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .track-info-heading,
+    .real-time-heading {
+        text-align: center;
+    }
+
+    .info-text {
+        text-align: center;
+    }
+
+    .btn-flex {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .left-component {
+        margin-top: 2rem;
+    }
+
+    .phone-container {
+        margin-left: 5rem;
+    }
+}
+
+@media only screen and (max-width: 493px) {
+    .track-info-heading,
+    .real-time-heading {
+        font-size: 2rem;
+    }
+}
+
+
